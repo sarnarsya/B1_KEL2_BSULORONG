@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasabah BSU Lorong</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+        }
+
+        .header {
+            background-color: #3290f5;
+            color: white;
+            padding: 0px 10px;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Jarak antara tombol kembali dan tulisan */
+        }
+
+        .btn-kembali {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 5px 10px;
+            border: 2px solid white;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .btn-kembali:hover {
+            background-color: white;
+            color: #007bff;
+        }
+
+        .logo-title {
+            font-size: 18px;
+            font-weight: bolder;
+            white-space: nowrap; /* Agar teks tidak terpotong */
+        }
+
+        .logo-right img {
+            width: 100px; /* Ukuran logo lebih kecil */
+            height: auto;
+        }
+
+        .content {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 1000px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .menu-item {
+            width: 90%;
+            max-width: 800px;
+            background-color: #3290f5;
+            color: white;
+            border-radius: 10px;
+            padding: 20px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .menu-item img {
+            width: 150px;
+            height: auto;
+        }
+
+        .menu-item h2 {
+            margin: 0;
+            font-size: 24px;
+            color: white;
+            flex: 1;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <!-- Grup kiri: Tombol kembali + Tulisan -->
+        <div class="header-left">
+            <a href="menu.html" class="btn-kembali">⟵</a>
+            <span class="logo-title">MENU NASABAH BSU LORONG</span>
+        </div>
+        <!-- Logo kanan atas -->
+        <div class="logo-right">
+            <img src="logo/logo putih.png" alt="Logo">
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="menu-item daftar-nasabah" onclick="navigateTo('daftarNasabah.php')">
+            <img src="logo/daftarNasabah.png" alt="Daftar Nasabah">
+            <h2>Daftar Nasabah</h2>
+        </div>
+        <div class="menu-item setor-sampah" onclick="navigateTo('setorsampah.php')">
+            <img src="logo/setorSampah.png" alt="Setor Sampah">
+            <h2>Setor Sampah</h2>
+        </div>
+        <div class="menu-item nasabah" onclick="navigateTo('datanasabah.php')">
+            <img src="logo/nasabah.png" alt="Nasabah">
+            <h2>Nasabah</h2>
+        </div>
+    </div>
+
+    <script>
+        function navigateTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>

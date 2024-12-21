@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-SignUp</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffffff;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px; /* Mengurangi jarak antar elemen */
+            margin-top: -10%; /* Menurunkan elemen dengan memberikan nilai negatif */
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0px; /* Pastikan tidak ada jarak bawah pada logo */
+        }
+
+        .header {
+            text-align: center;
+            color: rgb(0, 0, 0);
+            margin-top: 0; /* Menghilangkan margin atas default */
+        }
+
+        h1 {
+            font-size: 30px;
+            white-space: nowrap; 
+            margin-top: 0;
+            color: #000000; /* Menetapkan warna tulisan menjadi hitam */
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            color: rgb(3, 0, 0);
+            text-align: center;
+        }
+
+        .btn {
+            background-color: #1a78ca;
+            color: #ffffff;
+            border: none;
+            padding: 10px 50px; 
+            font-size: 20px;
+            cursor: pointer;
+            text-align: center;
+            border-radius: 5px;
+            width: 600px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="logo/logoBSU4.png" alt="Logo Website" width="80%" height="100%">
+        </div>
+        <div class="buttons">
+            <h1>Lorong Bersih Lingkungan Sehat</h1>
+            <h2>Silahkan Bergabung</h2>
+            <a href="login.php" target="_self">
+                <button class="btn">LOGIN</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

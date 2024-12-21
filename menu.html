@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSU Lorong Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #3290f5; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; /* Pastikan elemen mulai dari atas */
+            height: 100vh;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 0px; /* Kurangi jarak antara header dan elemen lainnya */
+        }
+
+        .logo {
+            width: 450px;
+            height: 400px;
+        }
+
+        .dashboard {
+            display: flex;
+            justify-content: center;
+            gap: 150px;
+            margin-top: 5px; /* Buat jarak kecil antar elemen */
+            padding-top: -10px;
+        }
+
+        .category {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .category img {
+            transition: transform 0.3s ease;
+            cursor: pointer; /* Menambahkan cursor pointer untuk interaksi */
+        }
+
+        .category img:hover {
+            transform: scale(1.1);
+        }
+
+        .category h2 {
+            font-size: 18px;
+            color: #ffffff;
+            margin: 0;
+        }
+
+        .nasabah-img,
+        .penjualan-img,
+        .sampah-img {
+            border: 2px solid #fff;
+            border-radius: 10px;
+        }
+
+        .nasabah-img {
+            width: 200px;
+            height: 200px;
+            filter: drop-shadow(2px 4px 6px #888);
+        }
+
+        .penjualan-img {
+            width: 200px;
+            height: 200px;
+            filter: drop-shadow(2px 4px 6px #888);
+        }
+
+        .sampah-img {
+            width: 200px;
+            height: 200px;
+            filter: drop-shadow(2px 4px 6px #888);
+        }
+
+        .logout-btn {
+            margin-top: 20px;
+            background-color: #ffffff;
+            color: rgb(51, 126, 255);
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .logout-btn:hover {
+            background-color: #4e8bc8;
+        }
+
+        .logout-btn:active {
+            background-color: #4374a4;
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo/logo putih.png" alt="BSU Lorong Logo" class="logo">
+    </div>
+
+    <div class="dashboard">
+        <div class="category">
+            <a href="nasabah.html"> <!-- Menambahkan tautan untuk gambar Nasabah -->
+                <img src="logo/nasabah.png" alt="Nasabah" class="nasabah-img">
+            </a>
+            <h2>Nasabah</h2>
+        </div>
+        <div class="category">
+            <a href="penjualan.php"> <!-- Menambahkan tautan untuk gambar Penjualan -->
+                <img src="logo/penjualan.png" alt="Penjualan" class="penjualan-img">
+            </a>
+            <h2>Penjualan</h2>
+        </div>
+        <div class="category">
+            <a href="riwayatsampahnasabah.php"> <!-- Menambahkan tautan untuk gambar Sampah -->
+                <img src="logo/sampah.png" alt="Sampah" class="sampah-img">
+            </a>
+            <h2>Sampah</h2>
+        </div>
+    </div>
+
+    <!-- Tombol Logout dengan pengalihan ke halamanPertama.html -->
+    <a href="halamanPertama.html">
+        <button class="logout-btn">Logout</button>
+    </a>
+</body>
+</html>
